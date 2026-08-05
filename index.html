@@ -1,89 +1,324 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FlowTask</title>
+
     <link rel="stylesheet" href="style.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-    <aside class="sidebar">  
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
         <div class="logo">
             <h2>FlowTask</h2>
         </div>
 
         <nav>
+
             <ul>
-                <li>DashBoard</li>
+
+                <li>Dashboard</li>
                 <li>Projetos</li>
                 <li>Equipe</li>
-                <li>Calendario</li>
+                <li>Calendário</li>
                 <li>Configurações</li>
+
             </ul>
+
         </nav>
 
     </aside>
 
+    <!-- CONTEÚDO -->
+
     <main>
 
+        <!-- HEADER -->
+
         <header class="header">
+
             <div class="search-box">
-                <input 
-                type="text"
-                placeholder="Pesquisar tarefas..."
-                >
+
+                <input
+                    type="text"
+                    placeholder="Pesquisar tarefas...">
+
             </div>
 
             <div class="header-right">
+
                 <button class="btn-add">
                     + Nova Tarefa
                 </button>
-            
+
                 <div class="user">
                     ○ CA
                 </div>
+
             </div>
 
         </header>
 
+        <!-- KANBAN -->
+
         <section class="board">
+
+            <!-- Pendências -->
+
             <div class="column">
-                <h3>Pêndencias</h3>
-                <div class="card">
-                    Criar tela de login
+
+                <div class="column-header">
+
+                    <div class="column-title">
+
+                        <h3>Pendências</h3>
+
+                        <span class="task-count danger">
+                            1
+                        </span>
+
+                    </div>
+
+                    <button class="add-task">+</button>
+
                 </div>
-                <div class="card">
-                    Planejar banco de dados
+
+                <div class="task-list">
+
+                    <div class="card">
+
+                        <span class="priority priority-high">Alta</span>
+                        </span>
+
+                        <h4>
+                            Criar tela de Login
+                        </h4>
+
+                        <div class="card-footer">
+
+                            <span class="card-date">
+                                📅 04 Ago
+                            </span>
+
+                            <div class="avatar">
+                                CA
+                            </div>
+
+                        </div>
+
+                    </div>
+
                 </div>
+
             </div>
+
+            <!-- Pronto -->
+
             <div class="column">
-                <h3>Pronto</h3>
-                <div class="card">
-                    Desenvolver o Header
+
+                <div class="column-header">
+
+                    <div class="column-title">
+
+                        <h3>Pronto</h3>
+
+                        <span class="task-count warning">
+                            1
+                        </span>
+
+                    </div>
+
+                    <button class="add-task">+</button>
+
                 </div>
+
+                <div class="task-list">
+
+                    <div class="card">
+
+                        <span class="priority priority-medium">Média</span>
+                        </span>
+
+                        <h4>
+                            Desenvolver o Header
+                        </h4>
+
+                        <div class="card-footer">
+
+                            <span class="card-date">
+                                📅 06 Ago
+                            </span>
+
+                            <div class="avatar">
+                                CA
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
             </div>
+
+            <!-- Em andamento -->
+
             <div class="column">
-                <h3>Em Andamento</h3>
-                <div class="card">
-                    Criar sidebar
+
+                <div class="column-header">
+
+                    <div class="column-title">
+
+                        <h3>Em Andamento</h3>
+
+                        <span class="task-count info">
+                            1
+                        </span>
+
+                    </div>
+
+                    <button class="add-task">+</button>
+
                 </div>
+
+                <div class="task-list">
+
+                    <div class="card">
+
+                        <span class="priority priority-low">Baixa</span>
+                        </span>
+
+                        <h4>
+                            Criar Sidebar
+                        </h4>
+
+                        <div class="card-footer">
+
+                            <span class="card-date">
+                                📅 08 Ago
+                            </span>
+
+                            <div class="avatar">
+                                CA
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
             </div>
+
+            <!-- Revisão -->
+
             <div class="column">
-                <h3>Revisão</h3>
-                <div class="card">
-                    Revisar CSS
+
+                <div class="column-header">
+
+                    <div class="column-title">
+
+                        <h3>Revisão</h3>
+
+                        <span class="task-count purple">
+                            1
+                        </span>
+
+                    </div>
+
+                    <button class="add-task">+</button>
+
                 </div>
+
+                <div class="task-list">
+
+                    <div class="card">
+
+                        <span class="priority priority-medium">Média</span>
+                        </span>
+
+                        <h4>
+                            Revisar CSS
+                        </h4>
+
+                        <div class="card-footer">
+
+                            <span class="card-date">
+                                📅 09 Ago
+                            </span>
+
+                            <div class="avatar">
+                                CA
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
             </div>
+
+            <!-- Concluído -->
+
             <div class="column">
-                <h3>Concluído</h3>
-                <div class="card">
-                    Criar estrutura HTML
+
+                <div class="column-header">
+
+                    <div class="column-title">
+
+                        <h3>Concluído</h3>
+
+                        <span class="task-count success">
+                            1
+                        </span>
+
+                    </div>
+
+                    <button class="add-task">+</button>
+
                 </div>
+
+                <div class="task-list">
+
+                    <div class="card">
+
+                        <span class="priority priority-low">Baixa</span>
+                        </span>
+
+                        <h4>
+                            Criar estrutura HTML
+                        </h4>
+
+                        <div class="card-footer">
+
+                            <span class="card-date">
+                                📅 02 Ago
+                            </span>
+
+                            <div class="avatar">
+                                CA
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
             </div>
+
         </section>
 
     </main>
@@ -91,4 +326,3 @@
 </body>
 
 </html>
-
