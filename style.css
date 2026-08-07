@@ -220,7 +220,7 @@ main{
 
 /* ---------------- CARDS ---------------- */
 .card{
-    background: white;
+    background: white !important;
     padding: 10px;
     border-radius: 10px;
     margin-top: -15px;
@@ -264,15 +264,15 @@ main{
     font-weight:600;
     margin-bottom:12px;
 }
-.priority-high {
-    background: #FEE2E2;
+.badge.priority-high {
+    background: #fee2e2;
     color: #DC2626;
 }
-.priority-medium {
+.badge.priority-medium {
     background: #FEF3C7;
     color: #D97706;
 }
-.priority-low {
+.badge.priority-low {
     background: #DCFCE7;
     color: #16A34A;
 }
