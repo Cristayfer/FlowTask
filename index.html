@@ -27,13 +27,10 @@
         <nav>
 
             <ul>
-
-                <li>Dashboard</li>
-                <li>Projetos</li>
-                <li>Equipe</li>
-                <li>Calendário</li>
-                <li>Configurações</li>
-
+                <li><a href="equipe">Equipe</a></li>
+                <li><a href="calculadora.html">Calculadora Fiscal</a></li>
+                <li><a href="solicitacoes.html">Solicitações</a></li>
+                <li><a href="configuracoes">Configurações</a></li>
             </ul>
 
         </nav>
@@ -49,7 +46,7 @@
         <header class="header">
 
             <div class="search-box">
-
+                <span class="search-box-icon">🔍 </span>
                 <input
                     type="text"
                     placeholder="Pesquisar tarefas...">
@@ -58,12 +55,12 @@
 
             <div class="header-right">
 
-                <button class="btn-add">
+                <button id="abrir", class="btn-add">
                     + Nova Tarefa
                 </button>
-
+                
                 <div class="user">
-                    ○ CA
+                    CA
                 </div>
 
             </div>
@@ -96,13 +93,12 @@
 
                 <div class="task-list">
 
-                    <div class="card">
+                    <div class="card priority-high">
 
                         <span class="priority priority-high">Alta</span>
-                        </span>
 
                         <h4>
-                            Criar tela de Login
+                            Produto: 54608
                         </h4>
 
                         <div class="card-footer">
@@ -145,13 +141,13 @@
 
                 <div class="task-list">
 
-                    <div class="card">
+                    <div class="card priority-medium">
 
                         <span class="priority priority-medium">Média</span>
                         </span>
 
                         <h4>
-                            Desenvolver o Header
+                            Produto: 465543
                         </h4>
 
                         <div class="card-footer">
@@ -194,13 +190,13 @@
 
                 <div class="task-list">
 
-                    <div class="card">
+                    <div class="card priority-low">
 
                         <span class="priority priority-low">Baixa</span>
                         </span>
 
                         <h4>
-                            Criar Sidebar
+                            Produto: 78123
                         </h4>
 
                         <div class="card-footer">
@@ -231,10 +227,6 @@
 
                         <h3>Revisão</h3>
 
-                        <span class="task-count purple">
-                            1
-                        </span>
-
                     </div>
 
                     <button class="add-task">+</button>
@@ -242,29 +234,6 @@
                 </div>
 
                 <div class="task-list">
-
-                    <div class="card">
-
-                        <span class="priority priority-medium">Média</span>
-                        </span>
-
-                        <h4>
-                            Revisar CSS
-                        </h4>
-
-                        <div class="card-footer">
-
-                            <span class="card-date">
-                                📅 09 Ago
-                            </span>
-
-                            <div class="avatar">
-                                CA
-                            </div>
-
-                        </div>
-
-                    </div>
 
                 </div>
 
@@ -280,10 +249,6 @@
 
                         <h3>Concluído</h3>
 
-                        <span class="task-count success">
-                            1
-                        </span>
-
                     </div>
 
                     <button class="add-task">+</button>
@@ -292,29 +257,6 @@
 
                 <div class="task-list">
 
-                    <div class="card">
-
-                        <span class="priority priority-low">Baixa</span>
-                        </span>
-
-                        <h4>
-                            Criar estrutura HTML
-                        </h4>
-
-                        <div class="card-footer">
-
-                            <span class="card-date">
-                                📅 02 Ago
-                            </span>
-
-                            <div class="avatar">
-                                CA
-                            </div>
-
-                        </div>
-
-                    </div>
-
                 </div>
 
             </div>
@@ -322,7 +264,7 @@
         </section>
 
     </main>
-
+<script src="index.js"></script>
 </body>
 
 </html>
