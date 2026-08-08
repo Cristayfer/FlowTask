@@ -291,9 +291,181 @@ main{
 
 
 
+/* ---------------- NOVA TAREFA ---------------- */
+
+.task-page {
+    min-height: 100vh;
+    background: #f3f4f6;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 50px 20px;
+}
+
+.task-form-container {
+    width: 100%;
+    max-width: 800px;
+    background: white;
+    border-radius: 18px;
+    padding: 30px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, .08);
+}
+
+.task-form-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.task-form-header h1 {
+    color: #111827;
+    font-size: 26px;
+    margin-bottom: 6px;
+}
+
+.task-form-header p {
+    color: #6b7280;
+    font-size: 14px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #374151;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    border: 1px solid #d9dee8;
+    border-radius: 10px;
+    padding: 11px 12px;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    color: #1f2937;
+    background: white;
+    outline: none;
+    transition: .2s ease;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, .12);
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.btn-create {
+    background: #030d2c;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: .2s ease;
+}
+
+.btn-create:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, .15);
+}
+
+.btn-cancel {
+    background: white;
+    color: #4b5563;
+    border: 1px solid #d9dee8;
+    padding: 10px 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .2s ease;
+}
+
+.btn-cancel:hover {
+    background: #f3f4f6;
+}
+
+.file-upload {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 90px;
+    border: 2px dashed #d9dee8;
+    border-radius: 10px;
+    background: #f9fafb;
+    color: #4b5563;
+    cursor: pointer;
+    transition: .2s ease;
+}
+
+.file-upload:hover {
+    border-color: #2563eb;
+    background: #f8faff;
+    color: #2563eb;
+}
+
+.file-upload input {
+    display: none;
+}
 
 
+/* ---------------- MODAL NOVA SOLICITAÇÃO ---------------- */
 
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(3, 13, 44, 0.45);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+
+    z-index: 1000;
+}
+
+.modal-content {
+    width: 100%;
+    max-width: 800px;
+    max-height: 90vh;
+
+    overflow-y: auto;
+
+    background: white;
+
+    border-radius: 18px;
+
+    padding: 30px;
+
+    box-shadow: 0 20px 50px rgba(0, 0, 0, .20);
+}
 
 
 
